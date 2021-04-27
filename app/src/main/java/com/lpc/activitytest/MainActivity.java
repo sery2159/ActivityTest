@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         log("onSaveInstanceState");
-        outState.putString("text", et.getText().toString());
+//        outState.putString("text", et.getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         log("onRestoreInstanceState");
-        et.setText(savedInstanceState.getString("text"));
+//        et.setText(savedInstanceState.getString("text"));
     }
 
     @Override
