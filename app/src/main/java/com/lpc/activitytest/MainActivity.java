@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         et = findViewById(R.id.et);
     }
 
+    /**
+     * 需要配置 android:configChanges="orientation"
+     *
+     * @param newConfig
+     */
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
