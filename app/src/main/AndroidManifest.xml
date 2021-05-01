@@ -9,14 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--
+        android:allowTaskReparenting="true"
+        android:taskAffinity="" 默认情况下，同一个应用下的相同
+        -->
         <activity android:name=".MainActivity"
-            android:configChanges="orientation|screenSize">
+            android:configChanges="orientation|screenSize"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SecondActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".ThirdActivity"/>
+        <activity android:name=".FourActivity"/>
     </application>
 
 </manifest>
